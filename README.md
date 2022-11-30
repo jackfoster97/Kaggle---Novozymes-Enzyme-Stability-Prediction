@@ -2,6 +2,12 @@
 
 This attempt at the Kaggle competition for predicting enzyme stability: https://www.kaggle.com/competitions/novozymes-enzyme-stability-prediction/data 
 
+The goal of the competition: 
+
+"Enzymes are proteins that act as catalysts in the chemical reactions of living organisms. The goal of this competition is to predict the thermostability of enzyme variants. The experimentally measured thermostability (melting temperature) data includes natural sequences, as well as engineered sequences with single or multiple mutations upon the natural sequences."
+
+
+
 Information about the dataset: 
 
 train.csv - the training data, with columns as follows:
@@ -23,3 +29,6 @@ test.csv - the test data; your task is to predict the target tm for each protein
 sample_submission.csv - a sample submission file in the correct format, with seq_id values corresponding to test.csv
 
 wildtype_structure_prediction_af2.pdb - the 3 dimensional structure of the enzyme listed above, as predicted by AlphaFold
+
+
+Evaluation - In essence this is a regression problem. So you are evaluated based upon spearmans rank correlation coefficient - https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient 
